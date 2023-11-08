@@ -1,0 +1,13 @@
+.buttonList{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10vh;
+    background-color: aqua;
+}
+.buttons{
+    height: 5vh;
+    width: 10vw;
+}

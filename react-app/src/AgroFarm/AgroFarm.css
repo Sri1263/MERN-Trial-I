@@ -1,0 +1,13 @@
+.NodeForm{
+    display: flex;
+    flex-direction: column;
+}
+.field{
+    width: 25%;
+    height: 5vh;
+    margin: 2vh;
+}
+.DataDisplay{
+    display: flex;
+    flex-direction: column;
+}

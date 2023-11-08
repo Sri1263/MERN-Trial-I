@@ -1,0 +1,17 @@
+{
+    "SID": "SID001",
+    "nodeType": "Sensor End",
+    "desc": "this-is-my-first-node"
+}{
+    "SID": "SID002",
+    "nodeType": "Sensor Edge",
+    "desc": "this-is-my-second-node"
+}{
+    "SID": "SID003",
+    "nodeType": "Sensor Edge",
+    "desc": "this-is-my-third-node"
+}{
+    "SID": "SID007",
+    "nodeType": "Sensor End",
+    "desc": "this-is-my-trial-desc"
+}{"SID":"SID001","nodeType":"Sensor End","desc":"this-is-my-first-node"}{"SID":"SID002","nodeType":"Sensor Edge","desc":"this-is-my-second-node"}{"SID":"SID003","nodeType":"Sensor End","desc":"this-is-my-third-node"}
