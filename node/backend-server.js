@@ -31,16 +31,16 @@ const server = http.createServer((req,res)=>{
                     fs.open('nodeData.json','a',(err,fd)=>{
                         if(err){
                             console.log(err)
-                            res.end({message:'error occured'})
+                            res.end(JSON.stringify({message:'error occured'}))
                         }
                         else{
-                            fs.writeFileSync(fd,body,(err)=>{
+                            fs.writeFile(fd,JSON.stringify(JSON.parse(body),null,3),(err)=>{
                                 if(err){
                                     console.log(err)
-                                    res.end({message:'error occured'})
+                                    res.end(JSON.stringify({message:'error occured'}))
                                 }
                                 else{
-                                    res.end({message:'Data Successfully Written to File'})
+                                    res.end(JSON.stringify({message:'Data Successfully Written to File and DB'}))
                                 }
                             })
                         }

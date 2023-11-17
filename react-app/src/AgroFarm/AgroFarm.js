@@ -16,7 +16,6 @@ const AgroFarm = () => {
         }
         const nodeData = {SID,nodeType,desc}
         console.log(nodeData);
-        alert(`${nodeData.SID} Data Submitted`)
         let res = await fetch('http://localhost:3030/AgroFarm/product',
             {
                 method: 'POST',
@@ -24,7 +23,10 @@ const AgroFarm = () => {
                 body: JSON.stringify(nodeData)
             }
         )
-        res = await JSON.parse(res.body)
+        res = await res.json()
+        alert(`${nodeData.SID} Data Submitted`)
+        console.log((`vandhuchu : ${res.message}`));
+        // res = await JSON.parse(res.body)
         alert(`message received : ${res.message} `)
     }
 
